@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    
+    <div class="nav-container">
+        <header>
+            <a href="index.html" class="logo">Yugansh Sharu</a>
+            <nav>
+                <ul>
+                    <li><a href="#info">Home</a></li>
+                    <li><a href="#About_me#">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contact_me">
+            
+                <li><a href="#contact">Contact</a></li>
+            
+        </div>
+        <canvas id="canvas1"></canvas>
+    </div>
+    <div class="info">
+        <div class="intro">
+            <h1 class="stagger1">Hi, I'm Yugansh </h1>
+            <div class="para">
+                <p>here is my portfolio</p>
+            </div>
+
+              <svg class="scroll1 class= stagger1 width="40" height="77" viewBox="0 0 40 77" style="transform: rotate(90deg); opacity: 1;">
+                <g id="scroll" transform="translate(-253 -787)" >
+                  <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(253 787)" fill="none" stroke="#fff" stroke-width="4">
+                    <rect width="40" height="77" rx="20" stroke="none"></rect>
+                    <rect x="2" y="2" width="36" height="73" rx="18" fill="none"></rect>
+                  </g>
+                  <circle class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="11" cy="11" r="11" transform="translate(262 798)" fill="#fff"></circle>
+                </g>
+              </svg>
+        </div>
+        <div class="pic">
+        <img src="Home.png" alt="profile pic" class= "stagger2">
+        </div>
+
+          
+    </div>
+    <section class="About_me">
+        <div class="left">
+            <div class="inner transition">
+                <h3 class="about">About Me</h3>
+                <div class="description">
+                    <p>I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy environments and also within a team setting. I am outgoing and tactful, and able to listen effectively when solving problems.</p>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <img src="About me.jpg" alt="about me " class="ab">
+    </section>
+    <section class="skills">
+        <div class="skill_container">
+            <ul>
+                <li class="transition2">
+                    <!-- <div class="icon-container one">
+                        
+                    </div> -->
+                    <h2 class="skill-title1">UI UX Design</h2>
+                    <p class="desc1">Lead UX designer for interior designing firms like Space-based Interiors and Styliv Interiorz.
+
+                        Spearheaded all design elements and templates.</p>
+                </li>
+                <li class="transition2">
+                    <!-- <div class="icon-container one">
+                        
+                    </div> -->
+                    <h2 class="skill-title2">Java programer</h2>
+                    <p class="desc1">Remade color switch game using Java FX making it more vibrant and eye friendly  including many interactive levels which may hooks up player till the end</p>
+                </li>
+                <li class="transition2">
+                    <!-- <div class="icon-container one">
+                        
+                    </div> -->
+                    <h2 class="skill-title3">Graphic Designer</h2>
+                    <p class="desc1">Made intellectual logos for Spacelabs Interiors , Styliv Interiors and JKS Suitings to match with their work culture and style. 
+                        Received 90% positive feedback from clients.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="transition3">
+            <p class="contact-me">Contact</p>
+            <p class="email">Eamil : yugansh19347@iiitd.ac,in</p>
+            <a href = "mailto:yugansh192347@iiitd.ac.in?subject = Feedback&body = Message">
+                Send Feedback
+                </a>
+            <p class="ph">Phone : 9013205829</p>
+        </div>
+        <img src="contact.png" alt="contact image" class="contact_img">
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg==" crossorigin="anonymous"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        let t1 = gsap.timeline();
+        t1.from('.intro',{
+
+            y: '-60%',
+            opacity: 0,
+            ease: Power4.easeOut
+        })
+        t1.from('.stagger2',{
+            scale:0.5,
+            stagger: .2,
+            ease: Back.easeOut.config(1,7)
+        })
+
+    </script>
+    <script src="interaction.js"></script>
+</body>
+</html>

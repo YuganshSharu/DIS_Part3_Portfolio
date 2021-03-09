@@ -1,0 +1,273 @@
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'poppins', arial;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img{width: 100;}
+
+.nav-container{
+    background-color: #05396B;
+    a{
+        color: white;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+    .logo {
+        color: #66FCF1;
+        font-weight: bold;
+
+    }
+    
+    ul {
+        display:flex;
+        a {
+            display: block;
+            padding-bottom: 0em;
+            padding-top: 0em;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+
+    
+}
+
+
+.info{
+   background-color: #074E92;
+   color: white; 
+   display: grid;
+   text-align: center;
+   padding: 4em;
+   img{
+       display: none;
+   }
+
+}
+.contact_me{
+    display: none;
+}
+.scroll1{
+    
+    width: 30px;
+    margin-top: 2em;
+    
+ }
+ section{
+     padding: 4em 2em;
+     text-align: center;
+ }
+
+ .About_me{
+     position: relative;
+    img{
+        width: 50%;
+        height: auto;
+        border: 10px solid #389583;
+    }
+ }
+ .About_me::before{
+     content: "";
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     background: #074E92;
+     top:0;
+     left: 0.3em;
+     z-index: -1;
+     
+ }
+ .intro::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    background: #ffffff;
+    bottom:0.05em;
+    left: 0.3em;
+    z-index: 1;
+    
+}
+ .about{
+     text-transform: uppercase;
+     font-weight: bold;
+     color: #05396B;
+     letter-spacing: .1em;
+     font-size: 1.3em;
+     padding-left: 3em;
+ }
+ .description{
+     color: #3B3b3b;
+     margin-bottom: 3em;
+     font-size: .85;
+     line-height: 1.8em;
+     font-weight: 500;
+     padding-left: 3.3em;
+ }
+ .skills{
+     background-color:#66FCF1;
+ }
+ .skills ul li {
+     background: #05396B;
+     padding: 2em;
+     border-radius: 2em;
+     margin-bottom: 1em;
+     color: white;
+     .skill-title1{
+        font-weight: bold;
+    }
+    .skill-title2{
+        font-weight: bold;
+    }
+    .skill-title3{
+        font-weight: bold;
+    }
+ }
+.contact{
+    background: #0B0C10;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin: 0em;
+    img{
+        
+        width: auto;
+        height: 100px;
+    }
+}
+.contact-me{
+
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: .07em;
+    font-size: 1.5em;
+    padding-bottom: 0em;
+    margin-bottom: 0.5em;
+}
+
+@media only screen and (min-width: 800px){
+
+    .About_me,.contact{
+        text-align: left;
+    }
+    .contact{
+        padding-top: 5em;
+    }
+    .About_me, .contact{
+        display: grid;
+        grid-template-columns: 40% auto;
+    }
+    .left, .contact{
+        display: grid;
+        place-content: center;
+    }
+    .left{
+        margin-left: 4em;
+    }
+    .ab{
+        margin-left: 8em;
+    }
+    .skills{
+        margin-top: -5em;
+        margin-bottom: -7em;
+        padding-top: 4em;
+    }
+    .skill_container ul {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 2em;
+    }
+    .nav-container{
+       display: grid;
+       grid-template-columns: 66% auto;
+       background: unset; 
+       header{
+        background: #05396B;
+    }
+    }
+    header{
+        padding: 2em 2em 2em 4em;
+    }
+    .contact_me{
+        padding: 2em 4em 2em 0;
+    }
+
+    .ab{
+        margin-top:5em;
+    }
+    .contact_me{
+        display: block;
+        
+        background: black;
+        ul{
+            
+            display: grid;
+            justify-content: space-between;
+            width: 1em;
+            float: right;
+            padding-left: 2em;
+            
+        }
+
+    }
+    .info {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: black;;
+        padding: 0;
+
+        .intro{
+            text-align: left;
+            background: #074E92;
+            padding: 6em 8em 6em 4em;
+        }
+        h1{
+            font-size: 3em;
+            line-height: 1.2em;
+        }
+    }
+    .pic img{
+        display: unset;
+        margin-left: -110%;
+        margin-top: 15%;
+        width: auto;
+        height: 300px;
+        border: 11px inset #66FCF1;
+    }
+    
+}
+.circle{
+    animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim{
+    from{
+        transform: translate(262px, 798px);
+        z-index: 5;
+    }
+    from{
+        transform: translate(262px, 830px);
+        
+    }
+}
+canvas{
+    background: black;
+    top: 0;
+    right: 0;
+}
